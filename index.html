@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>Prueba de API para la Geolocalización</title>
+</head>
+
+<body>
+
+    <!--Container of Bootstrap-->
+    <div class="container">
+
+        <!--Container of Leaflet-->
+        <div id="map">
+        </div>
+        <div>
+            <div class="mb-3">
+                <label for="create Mark" class="form-label fw-bold">Create a Mark</label>
+                <div class="input-group mb-3">
+                    <input id="frm-lat" type="number" class="form-control" placeholder="Latitude" aria-label="Latitude">
+                    <input id="frm-lon" type="number" class="form-control" placeholder="Lenght" aria-label="Lenght">
+                </div>
+            </div>
+            <button id="btn-add" type="submit" class="btn btn-primary" onclick="controllerMark()">Add</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!--Sources-->
+
+<!-- LEAFLET API INTERACTIVE MAPS-->
+
+<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />-->
+<!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<!--INTERN API-->
+<link rel="stylesheet" href="skin.css">
+<!--<script src="mapaFunciones.js"></script>-->
+<script src="src/utilities/MapUtilities.js"></script>
+<script src="src/utilities/DomUtilities.js"></script>
+<script src="MainScript.js"></script>
+
+
+<!--BOOTSTRAP-->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
